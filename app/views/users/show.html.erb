@@ -1,0 +1,13 @@
+<h1>User #<%= @user.id %></h1>
+
+<div>
+  <strong>Username</strong>:<br />
+  <p><%= @user.username %></p>
+</div>
+<div>
+  <strong>Password digest</strong>:<br />
+  <p><%= @user.password_digest %></p>
+</div>
+
+<a href="/users/<%= @user.id %>/edit">Edit</a> |
+<a href="/users/<%= @user.id %>/destroy">Destroy</a>

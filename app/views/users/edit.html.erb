@@ -1,0 +1,21 @@
+<h1>Editing User #<%= @user.id %></h1>
+
+<form action="/users/<%= @user.id %>/update">
+  <div>
+    <label for="username">username</label><br />
+    <input id="username" name="username" value="<%= @user.username  %>" type="text" />
+  </div>
+  <div>
+    <label for="password">Password</label><br />
+    <input id="password" name="password" type="password" />
+  </div>
+  <div>
+    <label for="password_confirmation">Confirm Password</label><br />
+    <input id="password_confirmation" name="password_confirmation" type="password" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
